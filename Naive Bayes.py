@@ -1,5 +1,3 @@
-'''Program 9'''
-
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.datasets import fetch_olivetti_faces
