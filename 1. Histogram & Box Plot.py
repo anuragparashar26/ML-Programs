@@ -37,7 +37,7 @@ for column in data.columns:
     lower_bound = Q1 - 1.5 * IQR
     upper_bound = Q3 + 1.5 * IQR
     outliers[column] = data[(data[column] < lower_bound) | (data[column] > upper_bound)]
-print(f"{column}:")
-print(f"Lower Bound: {lower_bound}, Upper Bound: {upper_bound}")
-print(f"Number of outliers: {len(outliers[column])}")
-print("---")
+    print(f"{column}:")
+    print(f"Lower Bound: {lower_bound}, Upper Bound: {upper_bound}")
+    print(f"Number of outliers: {len(outliers[column])}")
+    print("---")
